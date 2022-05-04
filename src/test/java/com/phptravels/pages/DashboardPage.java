@@ -21,6 +21,12 @@ public class DashboardPage {
     @FindBy(xpath = "//button[@class='e1mwfyk10 lc-7qdzrc e1m5b1js0']")
     public WebElement leaveAMessageButton;
 
+    @FindBy(xpath = "//span[.='Features']")
+    public WebElement featuresSection;
+
+    @FindBy(xpath = "//a[.='Blog Module']")
+    public WebElement blogModule;
+
     @FindBy(xpath = "//a[@href='./contact-us']")
     public WebElement contactusicom;
 }
