@@ -27,4 +27,6 @@ public class DashboardPage {
     @FindBy(xpath = "//a[.='Blog Module']")
     public WebElement blogModule;
 
+    @FindBy(xpath = "//a[@href='./contact-us']")
+    public WebElement contactusicom;
 }
