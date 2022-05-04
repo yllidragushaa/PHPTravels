@@ -20,4 +20,7 @@ public class DashboardPage {
 
     @FindBy(xpath = "//button[@class='e1mwfyk10 lc-7qdzrc e1m5b1js0']")
     public WebElement leaveAMessageButton;
+
+    @FindBy(xpath = "//a[@href='./contact-us']")
+    public WebElement contactusicom;
 }
