@@ -7,12 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class DashboardPage {
-    public DashboardPage(){
+    public DashboardPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    public void verifyBlogPage(WebElement expectedElement, WebElement actualElement){
-        Assert.assertEquals(expectedElement,actualElement);
+    public void verifyElement(String expected, WebElement actual) {
+        Assert.assertEquals(actual.getText(), expected);
     }
 
     @FindBy(xpath = "//a[@href='https://phptravels.com/demo']")
@@ -41,15 +41,18 @@ public class DashboardPage {
     public WebElement newsLetterModule;
 
 
-    @FindBy(xpath = "//img[@src='https://phptravels.com/assets/img/home/gateway.webp']")
+    @FindBy(xpath = "//p[.='All the major e-payment gatways are accepted here including Paypal, Credit Card, Western Union, Skrill, Bitcoin, Transferwise.']")
     public WebElement paymentMethods;
 
 
     @FindBy(xpath = "//a[@class='lvl-0 link nav-link']")
     public WebElement demopage;
 
+
+    @FindBy(xpath = "(//a[.='Desktop App'])[2]")
+    public WebElement desktopApp;
+
     @FindBy(xpath = "//a[.='CMS Module']")
     public WebElement cmsModule;
-
 
 }
