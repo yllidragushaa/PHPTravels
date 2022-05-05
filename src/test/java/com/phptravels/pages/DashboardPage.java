@@ -2,8 +2,12 @@ package com.phptravels.pages;
 
 import com.phptravels.utilities.Driver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+import javax.swing.*;
 
 public class DashboardPage {
     public DashboardPage(){
@@ -29,4 +33,16 @@ public class DashboardPage {
 
     @FindBy(xpath = "//a[@href='./contact-us']")
     public WebElement contactusicom;
+
+    @FindBy(xpath = "(//div[@class='dropdown-content featuresDropdown'])[1]")
+    public WebElement feauteresDropDown;
+
+    @FindBy(xpath = "(//div[@class='dropdown-content featuresDropdown'])[2]")
+    public WebElement productDropDown;
+
+    @FindBy(xpath = "(//div/a[@class='lvl-0 link nav-link'])[4]")
+    public WebElement requirements;
+
+
+
 }
