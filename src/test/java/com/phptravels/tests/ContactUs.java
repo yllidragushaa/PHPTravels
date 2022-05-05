@@ -11,7 +11,7 @@ public class ContactUs {
     @Test
     public void ContactUsPage() {
         Driver.getDriver().get(ConfigurationReader.getProperty ("siteurl"));
-        dashboardPage.contactusicon.click ();
+        dashboardPage.contactusicom.click ();
 
     }
 
