@@ -14,8 +14,7 @@ public class DemoOverview {
     public void DemoOveriviewPage(){
         Driver.getDriver ().get (ConfigurationReader.getProperty ("siteurl"));
         dashboardPage.demopage.click ();
-        BrowserUtilties.sleep(2);
-        Assert.assertEquals (dashboardPage.demopage.isDisplayed (), "Demo Credentials for Frontend and Backend");
+        dashboardPage.demopage.isDisplayed ();
     }
 }
 
