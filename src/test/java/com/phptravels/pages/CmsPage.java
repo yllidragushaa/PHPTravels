@@ -13,5 +13,4 @@ public class CmsPage {
     public void verifyUserOnCmsPage(){
         Assert.assertEquals(Driver.getDriver().getTitle(),"CMS module features - PHPTRAVELS");
     }
-
 }
