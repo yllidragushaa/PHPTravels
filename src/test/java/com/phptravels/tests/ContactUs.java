@@ -10,12 +10,11 @@ public class ContactUs {
 
     @Test
     public void ContactUsPage() {
-        Driver.getDriver().get(ConfigurationReader.getProperty ("siteurl"));
-
+        Driver.getDriver().get(ConfigurationReader.getProperty ("siteurl"))
+          
         dashboardPage.contactusicom.click();
 
         dashboardPage.contactusicom.click ();
-
 
     }
 
