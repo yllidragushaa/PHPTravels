@@ -4,11 +4,17 @@ import com.phptravels.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class DashboardPage {
     public DashboardPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
+    public void verifyBlogPage(WebElement expectedElement, WebElement actualElement){
+        Assert.assertEquals(expectedElement,actualElement);
+    }
+
     @FindBy(xpath = "//a[@href='https://phptravels.com/demo']")
     public WebElement demoModule;
 
@@ -30,7 +36,17 @@ public class DashboardPage {
     @FindBy(xpath = "//a[@href='./contact-us']")
     public WebElement contactusicom;
 
+
     @FindBy(xpath = "//a[.='Newsletter Module']")
     public WebElement newsLetterModule;
+
+
+    @FindBy(xpath = "//img[@src='https://phptravels.com/assets/img/home/gateway.webp']")
+    public WebElement paymentMethods;
+
+
+    @FindBy(xpath = "//a[@class='lvl-0 link nav-link']")
+    public WebElement demopage;
+
 
 }
