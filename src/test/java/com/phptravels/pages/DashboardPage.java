@@ -36,7 +36,12 @@ public class DashboardPage {
     @FindBy(xpath = "//a[@href='./contact-us']")
     public WebElement contactusicom;
 
+
     @FindBy(xpath = "//img[@src='https://phptravels.com/assets/img/home/gateway.webp']")
     public WebElement paymentMethods;
+
+
+    @FindBy(xpath = "//a[@class='lvl-0 link nav-link']")
+    public WebElement demopage;
 
 }
