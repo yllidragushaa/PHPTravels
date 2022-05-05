@@ -29,4 +29,7 @@ public class DashboardPage {
 
     @FindBy(xpath = "//a[@href='./contact-us']")
     public WebElement contactusicom;
+
+    @FindBy(xpath = "//a[@class='lvl-0 link nav-link']")
+    public WebElement demopage;
 }
