@@ -5,14 +5,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import org.openqa.selenium.support.ui.Select;
 
 import javax.swing.*;
 
+import org.testng.Assert;
+
+
 public class DashboardPage {
-    public DashboardPage(){
+    public DashboardPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
+    public void verifyElement(String expected, WebElement actual) {
+        Assert.assertEquals(actual.getText(), expected);
+    }
+
     @FindBy(xpath = "//a[@href='https://phptravels.com/demo']")
     public WebElement demoModule;
 
@@ -34,6 +43,7 @@ public class DashboardPage {
     @FindBy(xpath = "//a[@href='./contact-us']")
     public WebElement contactusicom;
 
+
     @FindBy(xpath = "(//div[@class='dropdown-content featuresDropdown'])[1]")
     public WebElement feauteresDropDown;
 
@@ -43,6 +53,27 @@ public class DashboardPage {
     @FindBy(xpath = "(//div/a[@class='lvl-0 link nav-link'])[4]")
     public WebElement requirements;
 
+
+
+
+
+    @FindBy(xpath = "//a[.='Newsletter Module']")
+    public WebElement newsLetterModule;
+
+
+    @FindBy(xpath = "//p[.='All the major e-payment gatways are accepted here including Paypal, Credit Card, Western Union, Skrill, Bitcoin, Transferwise.']")
+    public WebElement paymentMethods;
+
+
+    @FindBy(xpath = "//a[@class='lvl-0 link nav-link']")
+    public WebElement demopage;
+
+
+    @FindBy(xpath = "(//a[.='Desktop App'])[2]")
+    public WebElement desktopApp;
+
+    @FindBy(xpath = "//a[.='CMS Module']")
+    public WebElement cmsModule;
 
 
 }
