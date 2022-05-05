@@ -48,5 +48,8 @@ public class DashboardPage {
     @FindBy(xpath = "//a[@class='lvl-0 link nav-link']")
     public WebElement demopage;
 
+    @FindBy(xpath = "//a[.='CMS Module']")
+    public WebElement cmsModule;
+
 
 }
