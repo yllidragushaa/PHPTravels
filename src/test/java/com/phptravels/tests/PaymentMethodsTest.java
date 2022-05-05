@@ -7,12 +7,12 @@ import org.testng.annotations.Test;
 
 public class PaymentMethodsTest {
 
+
+
     DashboardPage dashboardPage = new DashboardPage();
 
- @Test
-    public void paymentMethodTest(){
-     Assert.assertTrue(dashboardPage.paymentMethods);
- }
+
+
 
 
 
