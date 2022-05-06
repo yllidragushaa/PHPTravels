@@ -14,7 +14,27 @@ public class ContactUs {
           
         dashboardPage.contactusicom.click();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         dashboardPage.contactusicom.click ();
+
+
+
+
+
+
 
     }
 
