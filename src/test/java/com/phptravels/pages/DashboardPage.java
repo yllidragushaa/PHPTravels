@@ -1,6 +1,7 @@
 package com.phptravels.pages;
 
 import com.phptravels.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -54,9 +55,6 @@ public class DashboardPage {
     public WebElement requirements;
 
 
-
-
-
     @FindBy(xpath = "//a[.='Newsletter Module']")
     public WebElement newsLetterModule;
 
@@ -75,5 +73,13 @@ public class DashboardPage {
     @FindBy(xpath = "//a[.='CMS Module']")
     public WebElement cmsModule;
 
+
+    public WebElement SocialMedias(int indexOfSocialMedia) {
+
+        String a = "(//a[@class='lvl-0 link social'])[" + indexOfSocialMedia + "]";
+        WebElement socialmedias = Driver.getDriver().findElement(By.xpath(a));
+
+        return socialmedias;
+    }
 
 }
