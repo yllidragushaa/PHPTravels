@@ -73,6 +73,11 @@ public class DashboardPage {
     @FindBy(xpath = "//a[.='CMS Module']")
     public WebElement cmsModule;
 
+    @FindBy(xpath = "//a[.='Mobile Apps']")
+    public WebElement mobileApps;
+
+    @FindBy(xpath = "(//a[.='Customizations'])[1]")
+    public WebElement costumizations;
 
     public WebElement SocialMedias(int indexOfSocialMedia) {
 
